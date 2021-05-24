@@ -54,7 +54,7 @@ body {
   width: 100vw;
   height: 100vh;
   color: #455A64;
-  background-color: #3498db;
+  /* background-color: #3498db; */
   font-family: var(--fontFamily);
   font-size: var(--fontSizeMd);
   line-height: var(--lineHeightMd);

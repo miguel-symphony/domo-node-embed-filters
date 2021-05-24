@@ -9,37 +9,13 @@
     </script>
     <script src="jsapi.js"></script>
   </head>
-  <body>
+  <body style="width:1200px">
     <div style="display: flex; flex-direction: column; width: 100%; justify-content: center; align-self: flex-start;">
-      <form id="filter_form" style="padding-top: 10px; color: black;" onsubmit="form_submit(event)">
-        <div>Input a column and value to filter by:</div>
-        <input id="column_input" type="text" id="fname" name="fname" placeholder="Column">
-        <input id="value_input" type="text" id="lname" name="lname" placeholder="Value">
-        <div>
-          <input type="submit" value="Submit">
-          <input type="button" value="Reset" onclick="reset_form()">
-        </div>
-      </form>
-      <div style="color: black; text-align: center; font-size: 40px; font-weight: 700;"><span>Sales Charts for </span><span style="text-transform: capitalize">USER</span></div>
+      <a href="/logout" style="text-align:right; display: block; color: black; margin-top: 20px; font-size: 20pt;" class="button">Logout</a>
+      <div style="color: black; font-size: 40px; font-weight: 700;"><span>Hi </span><span style="text-transform: uppercase">USER</span>, here are your Symphony Analytics...</div>      
       <div style="display: flex; justify-content: space-evenly; margin-top: 40px; width: 1200px; height: 600px; background-color: white; border-width: 2px; border-style: inset; color: black; font-size: 26px;">
         <iframe id="iframe1" src="/embed/items/1" width="100%" height="100%" scrolling="no" style="border: none"></iframe>
       </div>
-      <!-- <div style="display: flex; justify-content: space-evenly; margin-top: 40px; width: 1200px; height: 600px; background-color: white; border-width: 2px; border-style: inset; color: black; font-size: 26px;">
-        <iframe id="iframe2" src="/embed/items/2" width="100%" height="100%" scrolling="no" style="border: none"></iframe>
-      </div>
-      <div style="display: flex; justify-content: space-evenly; margin-top: 40px; width: 1200px; height: 600px; background-color: white; border-width: 2px; border-style: inset; color: black; font-size: 26px;">
-        <iframe id="iframe3" src="/embed/items/3" width="100%" height="100%" scrolling="no" style="border: none"></iframe>
-      </div>
-      <div style="display: flex; justify-content: space-evenly; margin-top: 40px; width: 1200px; height: 600px; background-color: white; border-width: 2px; border-style: inset; color: black; font-size: 26px;">
-        <iframe id="iframe4" src="/embed/items/4" width="100%" height="100%" scrolling="no" style="border: none"></iframe>
-      </div>
-      <div style="display: flex; justify-content: space-evenly; margin-top: 40px; width: 1200px; height: 600px; background-color: white; border-width: 2px; border-style: inset; color: black; font-size: 26px;">
-        <iframe id="iframe5" src="/embed/items/5" width="100%" height="100%" scrolling="no" style="border: none"></iframe>
-      </div>
-      <div style="display: flex; justify-content: space-evenly; margin-top: 40px; width: 1200px; height: 600px; background-color: white; border-width: 2px; border-style: inset; color: black; font-size: 26px;">
-        <iframe id="iframe6" src="/embed/items/6" width="100%" height="100%" scrolling="no" style="border: none"></iframe>
-      </div> -->
-      <a href="/logout" style="text-align: center; display: block; color: white; margin-top: 30px; font-size: 20pt;" class="button">Logout</a>
     </div>
   </body>
 </html>
